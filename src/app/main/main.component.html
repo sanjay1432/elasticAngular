@@ -2,11 +2,10 @@
 
 <h3>Users who have address</h3>
 <button (click) = "insertGeoCord()">Add  Geo Cord</button>
-<button (click) = "createIndex()">Create Index</button>
+<!-- <button (click) = "createIndex()">Create Index</button> -->
 <div class="leftside">
 <div *ngFor = "let user of users">
   <button mat-raised-button style="margin:1rem; width:100%" (click) = "getGeo(user)">{{user.email}}</button>
-
 </div>
 </div>
 <!-- 

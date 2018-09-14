@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule }        from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
@@ -16,12 +16,14 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { MainComponent } from './main/main.component';
 import { GoogleMapService } from './google-map.service';
-import {HttpModule} from "@angular/http";
-import {AgmCoreModule} from "@agm/core";
+import {HttpModule} from '@angular/http';
+import {AgmCoreModule} from '@agm/core';
+import { SubMainComponent } from './sub-main/sub-main.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    SubMainComponent
   ],
   imports: [
     HttpModule,
